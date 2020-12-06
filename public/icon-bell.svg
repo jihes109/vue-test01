@@ -1,0 +1,15 @@
+<svg id="icon-bell" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_285" data-name="사각형 285" width="32" height="32" transform="translate(252 18)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_5" data-name="마스크 그룹 5" transform="translate(-252 -18)" clip-path="url(#clip-path)">
+    <g id="그룹_699" data-name="그룹 699" transform="translate(34 -0.56)">
+      <g id="alarm-button" transform="translate(217.202 12.712)">
+        <path id="패스_358" data-name="패스 358" d="M12.863,22.811a2.159,2.159,0,0,0,2.216-2.083H10.647A2.159,2.159,0,0,0,12.863,22.811Zm6.647-6.25V11.354a6.386,6.386,0,0,0-4.986-6.583V2.5H11.2V4.771a6.389,6.389,0,0,0-4.986,6.583v5.208L4,18.645v1.042H21.726V18.645ZM17.295,17.6H8.432v-6.25a4.439,4.439,0,1,1,8.863,0Z" transform="translate(4.336 4.348)" fill="#fff"/>
+      </g>
+      <text id="하차벨" transform="translate(224.1 48.199)" fill="#fff" font-size="8" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-weight="700" letter-spacing="-0.025em"><tspan x="0" y="0">하차벨</tspan></text>
+    </g>
+  </g>
+</svg>

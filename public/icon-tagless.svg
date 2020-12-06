@@ -1,0 +1,21 @@
+<svg id="icon-tagless" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_286" data-name="사각형 286" width="32" height="32" transform="translate(308 18)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_4" data-name="마스크 그룹 4" transform="translate(-308 -18)" clip-path="url(#clip-path)">
+    <g id="그룹_698" data-name="그룹 698" transform="translate(0.583 0.001)">
+      <g id="그룹_651" data-name="그룹 651" transform="translate(308 23)">
+        <g id="그룹_650" data-name="그룹 650" transform="translate(0 0)">
+          <path id="패스_428" data-name="패스 428" d="M27.893,68.267H3.347A3.347,3.347,0,0,0,0,71.614v15.62a3.347,3.347,0,0,0,3.347,3.347H27.893a3.347,3.347,0,0,0,3.347-3.347V71.614A3.347,3.347,0,0,0,27.893,68.267Zm1.116,18.967a1.116,1.116,0,0,1-1.116,1.116H3.347a1.116,1.116,0,0,1-1.116-1.116V77.228H29.009Zm0-12.267H2.231V73.846Zm0,0L2.231,73.846V71.614A1.116,1.116,0,0,1,3.347,70.5H27.893a1.116,1.116,0,0,1,1.116,1.116v3.353Z" transform="translate(0 -68.267)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="그룹_653" data-name="그룹 653" transform="translate(328.083 37.503)">
+        <g id="그룹_652" data-name="그룹 652" transform="translate(0 0)">
+          <path id="패스_429" data-name="패스 429" d="M312.778,290.133h-4.463a1.116,1.116,0,1,0,0,2.231h4.463a1.116,1.116,0,1,0,0-2.231Z" transform="translate(-307.199 -290.133)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

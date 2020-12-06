@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>page title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- css group -->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+    <!--// css group -->
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  </head>
+
+  <body class="main">
+    <section class="vue-datasend margin-b2">
+      <div id="vuetest">
+        {{message}}
+      </div>
+      <script>
+        new Vue({
+          el: "#vuetest",
+          data: {
+            message: "hello",
+          },
+          beforeCreate: function() {
+            console.log("beforeCreate");
+          },
+          create: function() {
+            console.log("create");
+          },
+          mounted: function() {
+            console.log("mounted");
+            this.message = "chage data ";
+            // 화면에 인스턴스가 부착되고 템플릿 속성에 정의한 요소에 접근하여 로직 수행가능
+          },
+          updated: function() {
+            console.log("updated");
+          },
+        });
+      </script>
+    </section>
+
+    <section class="vue-customcomponent">
+      <div id="vue-btntest">
+        <button>전역/지역 컴포넌트 등록</button>
+        <my-component></my-component>
+        <my-local-component></my-local-component>
+        <child-component v-bind:propsdata="message"></child-component>
+        <child-component-event
+          v-on:show-log="printText"
+        ></child-component-event>
+        <!--//뷰이벤트 4 v-on:show-log: 하위 컴포넌트의 이벤트명 ="printText": 상위 컴포넌트의 메서드명 -->
+      </div>
+      <!-- 전역/지역 스크립트 되어있는 파일 호출 -->
+      <script src="app.js"></script>
+    </section>
+  </body>
+</html>

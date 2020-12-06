@@ -1,0 +1,318 @@
+/* @media (max-width: 600px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+} */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+} /* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  min-width: 360px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+}
+button:focus,
+[type="submit"]:focus {
+  outline: none;
+}
+.main {
+  background-image: url("bg-left.png");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  pointer-events: none;
+}
+
+li,
+ul,
+ol {
+  list-style: none;
+}
+
+/* ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+} */
+
+.reservation-body {
+  margin: 20px;
+  text-align: center;
+}
+.layout-center {
+  width: 100%;
+  margin: auto 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header {
+  width: 100%;
+  padding: 0;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+header {
+  padding: 20px;
+}
+.header-left {
+  display: flex;
+}
+.header-logo {
+  height: 40px;
+}
+.icon-down {
+  height: 18px;
+}
+
+.select-list {
+  width: calc(50% + 40px);
+  margin: 0 auto;
+  padding: 0;
+}
+.select-list ul > li {
+  border-bottom: 1px solid #fff;
+  /* text-align: left; */
+}
+
+.select-list-btn {
+  color: white;
+  padding: 20px 0;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.select-list-btn > p {
+  text-align: left;
+}
+.row :only-child {
+  padding: 0px 8px;
+}
+.display-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 100%;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+/* footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+} */
+
+.btn {
+  overflow: visible;
+  position: relative;
+  height: 48px;
+  margin: 0;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 30px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none !important;
+  text-align: center;
+  vertical-align: top;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.btn-pri {
+  color: white;
+  background-color: transparent;
+  border: 4px solid #2ccbcd;
+  line-height: 20px;
+  width: 100%;
+}
+.margin-b {
+  margin-bottom: 20px;
+}
+.margin-b2 {
+  margin-bottom: 40px;
+}
+.margin-r {
+  margin-right: 20px;
+}
+.margin-r2 {
+  margin-right: 40px;
+}
+.white {
+  color: white;
+  text-decoration-line: underline;
+}
+.font36 {
+  font-size: 36px;
+}

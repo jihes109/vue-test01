@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>page title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- css group -->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="common.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+    <!--// css group -->
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  </head>
+
+  <body class="main">
+    <section class="main">
+      <header>
+        <div class="header-left">
+          <span class="material-icons font36">
+            notes
+          </span>
+        </div>
+        <div class="header-right">
+          <button>
+            <img src="icon-bell.svg" class="header-logo  margin-r" alt="" />
+          </button>
+          <button>
+            <img src="icon-tagless.svg" class="header-logo " alt="" />
+          </button>
+        </div>
+      </header>
+      <div class="reservation-body layout-center">
+        <div class="reservation-header margin-b2">
+          <img src="logo_miri.png" alt="" />
+        </div>
+
+        <div class="select-list margin-b2 ">
+          <div class=" margin-b2">
+            <ul>
+              <li class="">
+                <button
+                  type="button"
+                  class="select-list-btn"
+                  data-toggle="modal"
+                  data-target="#myModal"
+                >
+                  <p class="margin-r">3000</p>
+                  <i class="material-icons md-48">
+                    keyboard_arrow_down
+                  </i>
+                </button>
+              </li>
+              <li class="display-flex">
+                <button
+                  type="button"
+                  class="select-list-btn"
+                  data-toggle="modal"
+                  data-target="#myModal"
+                >
+                  <p class="margin-r">출발지를 선택하세요</p>
+                  <!-- <img src="logo_miri.png" class="icon-down" alt="" /> -->
+                  <span class="material-icons">
+                    keyboard_arrow_down
+                  </span>
+                </button>
+              </li>
+              <li class="display-flex">
+                <button
+                  type="button"
+                  class="select-list-btn"
+                  data-toggle="modal"
+                  data-target="#myModal"
+                >
+                  <p class="margin-r">도착지를 선택하세요</p>
+                  <span class="material-icons">
+                    keyboard_arrow_down
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <button
+            type="button"
+            class=" btn btn-pri "
+            data-toggle="modal"
+            data-target="#myModal"
+          >
+            예약
+          </button>
+        </div>
+        <a href="" class="white">실시간위치</a>
+      </div>
+      <footer>
+        <!-- <p>Footer</p> -->
+      </footer>
+
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div
+              class="modal-header"
+              style="background-color: #0E3A83; color: white; height: 48px; align-items: center; border-bottom:none;"
+            >
+              <span> MiRi 팝업 표준화 테스트</span>
+              <button
+                type="button"
+                class="close"
+                style="color:white"
+                data-dismiss="modal"
+              >
+                &times;
+              </button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body" style="padding: 0;">
+              <!-- <div style="display: flex;"> -->
+              <img src="banner-test.png" alt="" style="width: 100%;" />
+              <!-- </div> -->
+            </div>
+
+            <!-- Modal footer -->
+            <!-- <div class="modal-footer"> -->
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-dismiss="modal"
+              style="background-color: white ; border-style: none; height: 48px; border-radius: 0; color: black;"
+            >
+              오늘하루 보지않기
+            </button>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
