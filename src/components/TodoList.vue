@@ -2,7 +2,8 @@
   <section>
     <ul>
       <li v-for="(todoItem, index) in propsdata" class="shadow" :key="todoItem">
-        <i class="checkBtn fa fa-check" aria-hidden="true"></i>
+        <!-- <i class="checkBtn fas fa-check" aria-hidden="true"></i> -->
+        항목
         {{ todoItem }}
         <span
           class="removeBtn"
@@ -10,7 +11,7 @@
           @click="removeTodo(todoItem, index)"
         >
           삭제
-          <!-- <i class="fa fa-trash-o" aria-hidden="true"></i> -->
+          <!-- <i class="far fa-trash-alt" aria-hidden="true"></i> -->
         </span>
       </li>
     </ul>
@@ -31,7 +32,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 ul {
   list-style-type: none;
   padding-left: 0px;

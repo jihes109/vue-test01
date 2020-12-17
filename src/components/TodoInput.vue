@@ -1,6 +1,7 @@
 <template>
   <div class="inputBox shadow">
     <input
+      class="input-left"
       type="text"
       v-model="newTodoItem"
       placeholder="Type what you have to do"
@@ -24,7 +25,9 @@ export default {
     addTodo() {
       if (this.newTodoItem !== "") {
         // console.log(this.newTodoItem); 콘솔에 찍어서 확인
-        localStorage.setItem(this.newTodoItem, this.newTodoItem); //로컬스토리지에 데이터 추가 application-storage-local storage
+        const value = this.newTodoItem && this.newTodoItem.trim();
+        this.$emit("addTodo", value);
+        // localStorage.setItem(this.newTodoItem, this.newTodoItem); //로컬스토리지에 데이터 추가 application-storage-local storage
         // this.$emit("addTodo", value);
         this.clearInput();
       }
@@ -40,23 +43,30 @@ export default {
 input:focus {
   outline: none;
 }
+.input-left {
+  width: 100%;
+  padding-left: 0.9rem;
+}
 .inputBox {
   background: white;
   height: 50px;
   line-height: 50px;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 .inputBox input {
   border-style: none;
   font-size: 0.9rem;
 }
 .addContainer {
-  float: right;
+  /* float: right; */
   background: linear-gradient(to right, #6478fb, #8763fb);
   display: inline-block;
   width: 3rem;
   border-radius: 0 5px 5px 0;
 }
+
 .addBtn {
   color: white;
   vertical-align: middle;

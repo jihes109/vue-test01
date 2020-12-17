@@ -3,22 +3,22 @@
     <TodoHeader></TodoHeader>
     <!-- <TodoInput></TodoInput>
     <TodoList></TodoList> -->
-    <TodoInput v-on:add="addTodo" Todo="addTodo"></TodoInput>
+    <TodoInput v-on:addTodo="addTodo"></TodoInput>
     <TodoList v-bind:propsdata="todoItems"></TodoList>
     <TodoFooter></TodoFooter>
   </div>
 </template>
 
 <script>
-import TodoHeader from './components/TodoHeader.vue';
-import TodoInput from './components/TodoInput.vue';
-import TodoList from './components/TodoList.vue';
-import TodoFooter from './components/TodoFooter.vue';
+import TodoHeader from "./components/TodoHeader.vue";
+import TodoInput from "./components/TodoInput.vue";
+import TodoList from "./components/TodoList.vue";
+import TodoFooter from "./components/TodoFooter.vue";
 
 export default {
   data() {
     return {
-      todoItems: [],
+      todoItems: [], //데이터 속성
     };
   },
   created() {
@@ -29,9 +29,10 @@ export default {
     }
   },
   methods: {
-    addTodo() {
-      // localStorage.setItem(todoItem, todoItem);
-      // this.todoItems.push(this.todoItem);
+    addTodo(todoItem) {
+      //로컬 스토리지에 데이터 추가
+      localStorage.setItem(todoItem, todoItem);
+      this.todoItems.push(todoItem);
     },
   },
   components: {
