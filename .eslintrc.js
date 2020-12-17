@@ -1,7 +1,7 @@
-{
+return {
   "parser": "vue-eslint-parser",
   "parserOptions": {
-    "parser": "babel-eslint",
     "ecmaVersion": 7
   }
 }
+
